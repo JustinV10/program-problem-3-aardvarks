@@ -18,6 +18,7 @@ void pause() {
 //MAIN
 void main() {
 	int x;
+	for ( int i = 1; i <= 30; i++) {
 	cout << "Choose a three digit number." << endl;
 	cin >> x;
 	cout << "Nice Choice Loser" << endl;
@@ -26,13 +27,15 @@ void main() {
 	int C = x % 10 ;
 
 	if ((A > B) && ( B > C)) {
-		cout << "descending" << endl;
+		cout << x << " is descending" << endl;
 	}
 	else if ((A < B) && (B < C)) {
-		cout << "acscending" << endl;
+		cout << x << " is acscending" << endl;
 	}
 	else {
-		cout << "neither" << endl;
+		cout << x << " is neither" << endl;
 	}
+	} 
+	
 	pause();
 }
